@@ -70,5 +70,84 @@ dependencies {
 }
 ```
     
+### Dagger Hilt
+
+- Dependency Setup
+
+```kotlin
+// build.gradle (:project)
+
+buildScript{
+    ext {
+        ...
+        hiltVersion = '2.38.1'
+    }
+
+    dependencies {
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+    }
+}
+```
+
+```kotlin
+// build.gradle (:app)
+
+plugins {
+    ...
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+...
+
+dependencies {
+    ...
+    implementation "com.google.dagger:hilt-android:$rootProject.hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$rootProject.hiltVersion"
+}
+```
+
+- `@HiltAndroidApp` 어노테이션 추가
+
+```kotlin
+// MainApplication.kt
+
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class MainApplication : Application()
+```
+
+의존성 주입의 **시작점**을 지정하고 Application의 생명주기를 따르며,
+
+컴파일 단계에서 DI에 필요한 구성요소들을 **초기화**한다.
+
+- `@AndroidEntryPoint` 어노테이션 추가
+
+```kotlin
+// GardenActivity.kt
+
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+class GardenActivity : AppCompatActivity() {
+    ...
+}
+```
+
+객체를 주입할 Android 클래스에 `@AndroidEntryPoint` 어노테이션 추가
+
+자동으로 생명주기에 따라 적절한 시점에 Hilt 요소로 인스턴스화 되어 처리됨
+
+<Hilt가 지원하는 Android Class>
+
+- `Application` (`@HiltAndroidApp`)
+- `Activity`
+- `Fragment`
+- `View`
+- `Service`
+- `BroadcastReceiver`
+    
   </div>
 </details>
