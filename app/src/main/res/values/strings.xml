@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">sunflower_clone</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="plant_details_title" translation_description="Title for the plant details screen where the user can see the details for a specific plant.">Plant details</string>
 </resources>
