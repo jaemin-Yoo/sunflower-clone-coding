@@ -228,5 +228,30 @@ implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVer
 </navigation>
 ```
   
+2. NavHost
+- frgment destinations을 전환해주는 역할
+
+```xml
+<!-- activity_graden.xml -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graden" />
+
+</layout>
+```
+
+- `app:navGraph` : NavHostFragment를 탐색 그래프와 연결
+- `app:defaultNavHost` : true로 설정 시 NavHostFragment가 시스템 Back 버튼을 가로챔
+  
 </div>
 </details>
