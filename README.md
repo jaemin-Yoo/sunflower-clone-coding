@@ -151,3 +151,82 @@ class GardenActivity : AppCompatActivity() {
     
   </div>
 </details>
+
+<details>
+<summary> <b> 2022-06-04 </b> </summary>
+<div markdown="1">
+  
+### Sunflower 구조
+
+- SPA(Single-Page-Application) 구조
+- 하나의 `Activity`와 여러 개의 `Fragment`
+- Jetpack Navigation에서 제공하는 `Bottom Navigation`, `Toolbar`사용 x
+- `Toolbar + ViewPager2 + TabLayout` in `MainActivity`
+
+## Jetpack Navigation
+
+> Navigation은 Android 애플리케이션 내에서 `대상` 사이를 탐색하는 프레임워크로,  
+> 대상이 Fragment, Activity 또는 기타 구성요소로 구현되었는지에 관계없이 일관된 API 제공  
+> → 즉, 화면 이동을 쉽고 편리하게 해줌  
+
+```kotlin
+// build.gradle (:app)
+
+implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
+implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
+```
+
+### 구성 요소
+
+1. Navigation graph (xml resource)
+
+각 fragment를 navigation으로 연결해준다.
+
+```xml
+// res/navigation/nav_graden.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/view_pager_fragment">
+
+    <fragment
+        android:id="@+id/view_pager_fragment"
+        android:name="com.jaemin.sunflower_clone.HomeViewPagerFragment"
+        tools:layout="@layout/fragment_view_pager">
+
+        <action
+            android:id="@+id/action_view_pager_fragment_to_plant_detail_fragment"
+            app:destination="@id/plant_detail_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/plant_detail_fragment"
+        android:name="com.jaemin.sunflower_clone.PlantDetailFragment"
+        android:label="@string/plant_details_title"
+        tools:layout="@layout/fragment_plant_detail">
+
+        <action
+            android:id="@+id/action_plant_detail_fragment_to_gallery_fragment"
+            app:destination="@id/gallery_fragment"/>
+        <argument
+            android:name="plantId"
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/gallery_fragment"
+        android:name="com.jaemin.sunflower_clone.GalleryFragment"
+        android:label="@string/plant_details_title"
+        tools:layout="@layout/fragment_gallery">
+        <argument
+            android:name="plantName"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>
+```
+  
+</div>
+</details>
