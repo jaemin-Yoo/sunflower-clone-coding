@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/garden_tab_selector.xml" value="0.1645" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_my_garden_active.xml" value="0.1645" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_my_garden_inactive.xml" value="0.1645" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_plant_list_active.xml" value="0.1645" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_plant_list_inactive.xml" value="0.1645" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/plant_list_tab_selector.xml" value="0.1645" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/tab_icon_color_selector.xml" value="0.1" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/activity_garden.xml" value="0.1" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_gallery.xml" value="0.2421875" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_garden.xml" value="0.2421875" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_plant_detail.xml" value="0.2421875" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_plant_list.xml" value="0.22760416666666666" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
       </map>
     </option>
