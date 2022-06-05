@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/tab_icon_color_selector.xml" value="0.1" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/activity_garden.xml" value="0.1" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_gallery.xml" value="0.2421875" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_plant_detail.xml" value="0.2421875" />
-        <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_view_pager.xml" value="0.2421875" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
       </map>
     </option>
   </component>
