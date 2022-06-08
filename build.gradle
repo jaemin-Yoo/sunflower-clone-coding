@@ -23,6 +23,7 @@ buildscript {
         roomVersion = '2.2.5'
         workVersion = '2.7.1'
         gsonVersion = '2.8.2'
+        glideVersion = '4.10.0'
     }
 
     dependencies {
