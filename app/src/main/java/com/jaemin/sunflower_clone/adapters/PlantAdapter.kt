@@ -1,5 +1,6 @@
 package com.jaemin.sunflower_clone.adapters
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
@@ -19,12 +20,17 @@ class PlantAdapter : ListAdapter<Plant, RecyclerView.ViewHolder>(PlantDiffCallba
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return PlantViewHolder(
-
+            ListItemPlantBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
         )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-
+        val plant = getItem(position)
+        (holder as PlantViewHolder).bind(plant)
     }
 
     class PlantViewHolder(
@@ -47,6 +53,13 @@ class PlantAdapter : ListAdapter<Plant, RecyclerView.ViewHolder>(PlantDiffCallba
                     plant.plantId
                 )
             view.findNavController().navigate(direction)
+        }
+
+        fun bind(item: Plant) {
+            binding.apply {
+                plant = item
+                executePendingBindings()
+            }
         }
     }
 }
