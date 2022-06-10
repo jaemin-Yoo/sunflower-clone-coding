@@ -34,6 +34,7 @@ class PlantListFragment : Fragment() {
 
     private fun subscribeUi(adapter: PlantAdapter) {
         viewModel.plants.observe(viewLifecycleOwner) { plants ->
+            Log.d("test", plants[0].imageUrl)
             adapter.submitList(plants)
         }
     }
