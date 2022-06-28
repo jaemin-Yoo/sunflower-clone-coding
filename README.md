@@ -18,4 +18,7 @@ Android 공식 Jetpack sample project인 [Sunflower](https://github.com/android/
 [2022-06-07](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.06.07)  
 [2022-06-08](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.06.08)  
 [2022-06-09](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.06.09)  
-[2022-06-10](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.06.10)
+[2022-06-10](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.06.10)  
+[2022-06-12](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.06.12)  
+
+> 2022-06-27 재개
