@@ -11,4 +11,7 @@
     <string name="a11y_plant_item_image" translation_description="Accessibility text for each of the plant images shown in the 'My garden' and 'Plant list' screens.">Picture of plant</string>
     <string name="add_plant" translation_description="Button text that prompts user to navigate to the Plant List to add plants to their empty garden.">Add plant</string>
     <string name="garden_empty" translation_description="Text that is shown on the 'My Garden' screen when no plants have been added to the user's garden">Your garden is empty</string>
+
+    <string name="plant_date_header" translation_description="Text that is shown on each plant on the 'My Garden' screen which says the word Planted to show date of planting below">Planted</string>
+    <string name="watered_date_header" translation_description="Text that is shown on each plant on the 'My Garden' screen which says the word Last Watered to show date of last watering below">Last Watered</string>
 </resources>
