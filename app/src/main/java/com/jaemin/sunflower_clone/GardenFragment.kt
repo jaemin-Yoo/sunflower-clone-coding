@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
+import com.jaemin.sunflower_clone.adapters.GardenPlantingAdapter
 import com.jaemin.sunflower_clone.adapters.PLANT_LIST_PAGE_INDEX
 import com.jaemin.sunflower_clone.databinding.FragmentGardenBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,6 +26,10 @@ class GardenFragment: Fragment() {
         }
 
         return binding.root
+    }
+
+    private fun subscribeUi(adapter: GardenPlantingAdapter, binding: FragmentGardenBinding) {
+
     }
 
     private fun navigateToPlantListPage() {
