@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/garden_tab_selector.xml" value="0.1645" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_detail_back.xml" value="0.18" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_detail_share.xml" value="0.194" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_filter_list_24dp.xml" value="0.157" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_my_garden_active.xml" value="0.1645" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/drawable/ic_my_garden_inactive.xml" value="0.1645" />
@@ -19,6 +21,7 @@
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/list_item_garden_planting.xml" value="0.13272543059777103" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/layout/list_item_plant.xml" value="0.2421875" />
+        <entry key="..\:/git/sunflower_clone/app/src/main/res/menu/menu_plant_detail.xml" value="0.27291666666666664" />
         <entry key="..\:/git/sunflower_clone/app/src/main/res/menu/menu_plant_list.xml" value="0.30364583333333334" />
       </map>
     </option>

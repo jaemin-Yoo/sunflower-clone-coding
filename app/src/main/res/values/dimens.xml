@@ -13,4 +13,9 @@
     <!-- Plant List Header margin -->
     <dimen name="header_margin">24dp</dimen>
 
+    <dimen name="plant_detail_app_bar_height">278dp</dimen>
+
+    <!-- elevation for Plant Detail toolbar - used to convert to pixels when hiding/showing -->
+    <dimen name="toolbar_elevation">5dp</dimen>
+
 </resources>
