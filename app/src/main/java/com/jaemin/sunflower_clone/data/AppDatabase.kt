@@ -15,6 +15,7 @@ import com.jaemin.sunflower_clone.worker.SeedDatabaseWorker.Companion.KEY_FILENA
 
 @Database(entities = [Plant::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase(){
+    abstract fun gardenPlantingDao(): GardenPlantingDao
     abstract fun plantDao(): PlantDao
 
     companion object {
