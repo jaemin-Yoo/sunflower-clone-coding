@@ -22,3 +22,5 @@ Android 공식 Jetpack sample project인 [Sunflower](https://github.com/android/
 [2022-06-12](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.06.12)  
 [2022-07-08](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.06.28)  
 [2022-07-10](https://velog.io/@iamjm29/Android-Sunflower-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-22.07.10)  
+
+> (22.07.18 ~ ) 부스트 캠프 7기 시작으로 잠정 중단 ㅠ
